@@ -1,0 +1,50 @@
+[33mcommit 89b864e3d6c78d5ff81c80c5860a3ebdbfc92f7f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Sulaimon Yusuf Ayomide <codewithemperor@gmail.com>
+Date:   Thu Feb 22 16:10:29 2024 +0100
+
+            modified:   assets/img/blog-1.png
+            modified:   assets/img/blog-2.png
+            modified:   assets/img/blog-3.png
+
+[33mcommit f8f0daffae6464516a2ee054e0e6a3b21b674ac2[m
+Author: Sulaimon Yusuf Ayomide <codewithemperor@gmail.com>
+Date:   Thu Feb 22 15:48:55 2024 +0100
+
+            modified:   assets/css/style.css
+
+[33mcommit c6e3434018118541bf65dfa1c3b2bdec5341ba0c[m
+Author: Sulaimon Yusuf Ayomide <codewithemperor@gmail.com>
+Date:   Thu Feb 22 15:34:35 2024 +0100
+
+            new file:   assets/css/responsive.css
+            new file:   assets/css/root.css
+            new file:   assets/css/style.css
+            new file:   assets/img/blog-1.png
+            new file:   assets/img/blog-2.png
+            new file:   assets/img/blog-3.png
+            new file:   assets/img/favicon-32x32.png
+            new file:   assets/js/script.js
+            modified:   index.html
+            new file:   resources/css/bootstrap.min.css
+            new file:   resources/css/remixicon/remixicon.css
+            new file:   resources/css/remixicon/remixicon.eot
+            new file:   resources/css/remixicon/remixicon.ttf
+            new file:   resources/css/remixicon/remixicon.woff
+            new file:   resources/css/remixicon/remixicon.woff2
+            new file:   resources/fonts/Montserrat-VariableFont_wght.ttf
+            new file:   resources/fonts/Poppins-Regular.ttf
+            new file:   resources/js/bootstrap.bundle.min.js
+            new file:   resources/js/jquery.js
+            new file:   resources/js/popper.js
+
+[33mcommit 21854af5d8bb4dd27033d031623bac7b87954309[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Sulaimon Yusuf Ayomide <codewithemperor@gmail.com>
+Date:   Thu Feb 22 14:40:56 2024 +0100
+
+            new file:   index.html
+
+[33mcommit 726e23f281c70f739b25afb59fed613da7261062[m
+Author: codewithemperor <154053077+codewithemperor@users.noreply.github.com>
+Date:   Thu Feb 22 14:36:54 2024 +0100
+
+    Initial commit

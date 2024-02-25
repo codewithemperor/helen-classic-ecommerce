@@ -4,20 +4,15 @@
 
 body{
 	font-family: var(--font-primary);
-	background: linear-gradient(rgba(0, 0, 0, 0.779), rgba(0, 0, 0, 0.69)), url(../img/passport.jpg);
+	/* background: linear-gradient(rgba(0, 0, 0, 0.779), rgba(0, 0, 0, 0.69)), url(../img/passport.jpg); */
 	max-width: 100vw;
-	color: var(--color-lightn)
+	color: var(--color-lightest)
 }
 
 
-
-.main-section{
-	position: relative;	
+.top-header {
+	background-color: var(--tertiary-color);
 }
-
-
-
-/* Navbar Styles */
 
 
 .navbar {

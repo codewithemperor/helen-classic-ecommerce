@@ -121,8 +121,8 @@ ul{
 	color: var(--color-heading) !important;
 }
 
-.color-primary {
-	color: var(--color-primary)!important;
+.c-primary {
+	color: var(--primary-color)!important;
 }
 
 .bg-black-gradient {

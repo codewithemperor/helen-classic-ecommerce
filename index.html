@@ -71,32 +71,46 @@
 
     <nav class="navbar navbar-expand-md p-3 px-lg-4 bottom-header">
       <div class="container-fluid">
-        <div class="">
-          <a href="/" class="d-flex align-items-center me-md-auto link-body-emphasis text-decoration-none">
+        <div class="col-md-3">
+          <a href="/" class=" align-items-center me-md-auto link-body-emphasis text-decoration-none">
             <img src="assets/img/favicon-32x32.png" alt="Helen's Classic Logo" class="me-2">
             <span class="fs-4">Helen's Classic</span>
           </a>
         </div>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+        <div class="col-md-8">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Wears</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Bags</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shoes</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <div class="input-group w-100">
+                <select class="form-select edit-flex" name="" id="">
+                  <option value="*" selected>All</option>
+                  <option value="bags">Bag</option>
+                  <option value="bags">Shoes</option>
+                  <option value="bags">Utensils</option>
+                </select>
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn search-btn" type="submit"><i class="ri-search-line"></i></button>
+              </div>
+            </form>
+          </div>
+
         </div>
 
         

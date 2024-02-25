@@ -19,7 +19,11 @@ body{
 }
 
 .edit-flex {
-	flex: 0 1 25% !important;
+	flex: 0 1 30% !important;
 }
 
+.search-btn:hover, .search-btn {
+	background-color: var(--tertiary-color);
+	color: var(--color-lightest);
+}
 

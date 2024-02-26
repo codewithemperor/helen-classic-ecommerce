@@ -12,10 +12,10 @@
   font-style: normal;
 }
 :root {
-	--primary-color: #F11A7B;
-	--secondary-color: #982176;
-	--tertiary-color: #3E001F;
-	--accent-color: #FFE5AD;
+	--primaryColor: #F11A7B;
+	--secondaryColor: #982176;
+	--tertiaryColor: #3E001F;
+	--accentColor: #FFE5AD;
 	--color-gray: #f6f6f6;
 	--background-color-1: linear-gradient(145deg, #3E001F, #F11A7B);
 	--background-color-2: #212428;

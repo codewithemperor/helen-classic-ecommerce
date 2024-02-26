@@ -10,8 +10,8 @@
 </head>
 <body>
 
-  <header class="mb-3 border-bottom">
-    <div class="container-fluid py-3 top-header d-md-flex d-sm-block justify-content-sm-start justify-content-md-between align-items-center text-center">
+  <header class=" border-bottom sticky-top ">
+    <!-- <div class="container-fluid py-2 text-dark d-md-flex d-sm-block justify-content-sm-start justify-content-md-between align-items-center text-center">
       <div class="mx-3  justify-content-start d-md-flex d-sm-block">
         <div class="contact me-4">
           <i class="ri-phone-fill c-primary me-1"></i>
@@ -22,101 +22,140 @@
           <span>customercare@helenslassic.com</span>
         </div>
       </div>
+    </div> -->
 
-    
-      <div class="d-flex align-items-center flex-row-reverse justify-content-between mt-2 mt-md-0">
-        <div class="cart ">
-          <a type="button" class="position-relative me-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-            <i class="ri-shopping-cart-2-fill fs-3"></i>
-            <span class="position-absolute top-50 start`-0 translate-middle badge rounded-pill bg-danger">
-              0
-              <span class="visually-hidden">unread messages</span>
-            </span>
+    <div class="">
+      <div class="top-header container-fluid d-flex px-3 py-3 px-lg-4 justify-content-between align-items-center">
+
+        <div class="col-2">
+          <a href="/" class="d-flex justify-content-start align-items-center">
+            <img src="assets/img/favicon-32x32.png" alt="Helen's Classic Logo" class="me-2 rounded-5" width="32" height="32" >
+            <span class="fs-5">Helen's Classic</span>
           </a>
-    
-          <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <p>Try scrolling the rest of the page to see this option in action.</p>
-            </div>
-          </div>
         </div>
 
-        <div class="profile mx-md-4 mx-sm-0">
-          <div class="dropdown">
-            <a href="#" class="d-block dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="assets/img/blog-1.png" alt="mdo" width="32" height="32" class="rounded-circle">
-              <span>Sulamon Yusuf</span>
+        <div class="search col-7">
+          <form class="d-flex" role="search">
+            <div class="input-group">
+              <input class="form-control" type="search" placeholder="Search for products, brand, categories etc" aria-label="Search">
+              <button class="btn search-btn" type="submit"><i class="ri-search-line"></i></button>
+            </div>
+          </form>
+        </div>
+
+        <div class="d-flex align-items-center flex-row-reverse justify-content-end">
+
+          <div class="cart ">
+            <a type="button" class="position-relative me-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+              <i class="ri-shopping-cart-2-fill fs-3"></i>
+              <span class="position-absolute top-50 start`-0 translate-middle badge rounded-pill bg-danger">
+                0
+                <span class="visually-hidden">unread messages</span>
+              </span>
             </a>
-            <ul class="dropdown-menu text-small">
-              <li><a class="dropdown-item" href="#">My Orders</a></li>
-              <li><a class="dropdown-item" href="#">My Profile</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Sign out</a></li>
-            </ul>
+      
+            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <p>Try scrolling the rest of the page to see this option in action.</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
+  
+          <div class="profile mx-md-4 mx-sm-0">
+            <div class="dropdown">
+              <a href="#" class="d-block dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="assets/img/blog-1.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                <span>Sulamon Yusuf</span>
+              </a>
+              <ul class="dropdown-menu text-small">
+                <li><a class="dropdown-item" href="#">My Orders</a></li>
+                <li><a class="dropdown-item" href="#">My Profile</a></li>
+                <li><a class="dropdown-item" href="#">Saved Items</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Sign out</a></li>
+              </ul>
+            </div>
+          </div>
 
-      <!-- <div class="cart">
-        <i class="ri-shopping-basket-2-fill"></i>
-        <div class="cart-badge rounded-5">
-          <span class="">5</span>
         </div>
-      </div> -->
+
+      </div>
     </div>
 
-    <nav class="navbar navbar-expand-md p-3 px-lg-4 bottom-header">
-      <div class="container-fluid">
-        <div class="col-md-3">
-          <a href="/" class=" align-items-center me-md-auto link-body-emphasis text-decoration-none">
-            <img src="assets/img/favicon-32x32.png" alt="Helen's Classic Logo" class="me-2">
-            <span class="fs-4">Helen's Classic</span>
-          </a>
-        </div>
+    <div class="bottom-header py-1">
+      <ul class="d-flex me-auto m-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Top Deals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Best Deals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Clearance Sales</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Wears</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Bags</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Shoes</a>
+        </li>
+      </ul>
+    </div>
 
-        <div class="col-md-8">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Wears</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Bags</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Shoes</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <div class="input-group w-100">
-                <select class="form-select edit-flex" name="" id="">
-                  <option value="*" selected>All</option>
-                  <option value="bags">Bag</option>
-                  <option value="bags">Shoes</option>
-                  <option value="bags">Utensils</option>
-                </select>
-                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn search-btn" type="submit"><i class="ri-search-line"></i></button>
-              </div>
-            </form>
-          </div>
-
-        </div>
-
-        
-      </div>
-    </nav>
   </header>
+
+  <div class="bg-1 p-3 py-5">
+    <div class="container-fluid filter">
+      <div class="p-3 py-5 mt-5 text-center  rounded-3">
+        <h1 class="text-body-emphasis">Jumbotron with icon</h1>
+        <p class="col-lg-8 mx-auto fs-5 text-muted">
+          This is a custom jumbotron featuring an SVG image at the top, some longer text that wraps early thanks to a responsive <code>.col-*</code> class, and a customized call to action.
+        </p>
+        <div class="d-inline-flex gap-2 mb-5">
+          <button class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="button">
+            Call to action
+            <svg class="bi ms-2" width="24" height="24"><use xlink:href="#arrow-right-short"/></svg>
+          </button>
+          <button class="btn btn-outline-secondary btn-lg px-4 rounded-pill" type="button">
+            Secondary link
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="bg-1 p-3 py-5">
+    <div class="container-fluid filter">
+      <div class="p-3 py-5 mt-5 text-center  rounded-3">
+        <h1 class="text-body-emphasis">Jumbotron with icon</h1>
+        <p class="col-lg-8 mx-auto fs-5 text-muted">
+          This is a custom jumbotron featuring an SVG image at the top, some longer text that wraps early thanks to a responsive <code>.col-*</code> class, and a customized call to action.
+        </p>
+        <div class="d-inline-flex gap-2 mb-5">
+          <button class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="button">
+            Call to action
+            <svg class="bi ms-2" width="24" height="24"><use xlink:href="#arrow-right-short"/></svg>
+          </button>
+          <button class="btn btn-outline-secondary btn-lg px-4 rounded-pill" type="button">
+            Secondary link
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  
     
 
 

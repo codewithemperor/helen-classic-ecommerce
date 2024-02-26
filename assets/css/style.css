@@ -3,27 +3,39 @@
 
 
 body{
-	font-family: var(--font-primary);
-	/* background: linear-gradient(rgba(0, 0, 0, 0.779), rgba(0, 0, 0, 0.69)), url(../img/passport.jpg); */
+	font-family: var(--font-secondary);
 	max-width: 100vw;
 	color: var(--color-lightest)
 }
 
 
 .top-header {
-	background-color: var(--tertiary-color);
+	background-color: var(--tertiaryColor);
 }
 
 .bottom-header {
-	background-color: var(--accent-color) !important;
+	background-color: var(--primaryColor) !important;
 }
 
 .edit-flex {
 	flex: 0 1 30% !important;
 }
 
-.search-btn:hover, .search-btn {
-	background-color: var(--tertiary-color);
-	color: var(--color-lightest);
+.search-btn {
+	background-color: var(--accentColor);
+	color: var(--primaryColor);
 }
 
+.search-btn:hover {
+	background-color: var(--color-lightest);
+	color: var(--primaryColor);
+}
+
+.bg-1 {
+	background: linear-gradient(270deg, #3e001fc2, #FFE5ADce, #f11a7bce ), url(../img/beautiful-casual-woman-fashion-set.jpg);
+}
+
+.filter {
+	background-color: transparent;
+	backdrop-filter: blur(3px);
+}

@@ -45,7 +45,3 @@ body{
 	overflow: hidden;
 }
 
-.lie {
-	white-space: nowrap; /* Prevent text from wrapping to the next line */
-	margin-right: 10px; /* Adjust margin between list items as needed */
-  }

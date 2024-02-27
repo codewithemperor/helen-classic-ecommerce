@@ -150,8 +150,23 @@ background-position: 0 0, 20px  20px;
 	position: absolute;
 	top: 0;
 	right: 0;
+	margin-top: 10px;
+	margin-right: 10px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	background-color: var(--primaryColor);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
 }
 
+.product-icon i {
+	color: var(--color-lightest);
+	padding: 10px;
+	margin-left: 5px;
+}
 
  .price {
 	background-color: var(--primaryColor);

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="resources/css/remixicon/remixicon.css">
+    <link rel="stylesheet" href="resources/css/lightslider.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
@@ -117,13 +118,107 @@
       </div>
     </div>
   </div>
+  <div class="pattern-backgrond"></div>
+
+  <div class="container-md p-3 mb-3">
+
+    <div class="glitch-wrapper line mt-lg-2">
+      <div class="glitch " data-glitch="Best Deal">Best Deal</div>
+   </div>
+
+   <div class="card text-center">
+    <div class="card-header">
+      <ul class="nav nav-tabs card-header-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="true" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+    <div class="card-body">
+      <div class="row g-4" id="lightgallery">
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/beautiful-casual-woman-fashion-set.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/blog-1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a short card.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/blog-2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/blog-3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
   
 
       <script src="resources/js/jquery.js"></script>
       <script src="resources/js/popper.js"></script>
       <script src="resources/js/bootstrap.bundle.min.js"></script>
+      <script src="resources/js/lightslider.js"></script>
       <script src="assets/js/script.js"></script>
+      <script>
+        $(document).ready(function() {
+    $('#lightgallery').lightSlider({
+        item:4,
+        loop:false,
+        slideMove:2,
+        easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+        speed:600,
+        responsive : [
+            {
+                breakpoint:800,
+                settings: {
+                    item:3,
+                    slideMove:1,
+                    slideMargin:6,
+                  }
+            },
+            {
+                breakpoint:480,
+                settings: {
+                    item:2,
+                    slideMove:1
+                  }
+            }
+        ]
+    });  
+  });
+      </script>
 
 </body>
 </html>

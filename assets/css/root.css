@@ -89,13 +89,6 @@
     box-sizing: border-box;
 }
 
-section {
-	min-height: 100vh;
-	width: 100%;
-}
-
-
-
 /* ******************************/
 /***********REUSABLE***********/
 /*******************************/
@@ -116,28 +109,13 @@ ul{
 
 
 
-/*********** COLOR START HERE ***********/
-.color-heading{
-	color: var(--color-heading) !important;
-}
-
-.c-primary {
-	color: var(--primary-color)!important;
-}
-
-.bg-black-gradient {
-	background: linear-gradient(#000, #010013);
-}
-/*********** COLOR ENDS HERE ***********/
-
-
 /*********** TEXT START HERE ***********/
 
-.text-heading-1 {
-	font-size: var(--h1);
-	font-weight: var(--s-bold);
+.heading-11 {
+	
+	font-weight: 900;
 	font-family: var(--font-primary);
-	color: var(--color-heading);
+	color: var(--tertiaryColor);
 }
 
 .text-heading-2 {

@@ -147,6 +147,7 @@ background-position: 0 0, 20px  20px;
 } 
 
 .product-icon {
+	visibility: hidden;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -160,12 +161,22 @@ background-position: 0 0, 20px  20px;
 	-moz-border-radius: 10px;
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px;
+	
+}
+
+.product:hover .product-icon {
+	transition: all .7s ease;
+	visibility: visible;
+	-webkit-transition: all .7s ease;
+	-moz-transition: all .7s ease;
+	-ms-transition: all .7s ease;
+	-o-transition: all .7s ease;
 }
 
 .product-icon i {
 	color: var(--color-lightest);
 	padding: 10px;
-	margin-left: 5px;
+	font-size: larger;
 }
 
  .price {

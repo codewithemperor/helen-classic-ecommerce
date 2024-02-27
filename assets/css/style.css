@@ -141,3 +141,25 @@ background-position: 0 0, 20px  20px;
 	   transform: translate(0);
 	}
  }
+
+.product-overlay {
+	position: relative;
+} 
+
+.product-icon {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+
+ .price {
+	background-color: var(--primaryColor);
+	color: var(--color-lightest);
+	font-weight: 900;
+	letter-spacing: 2px;
+ }
+
+ .product-name {
+	color: var(--primaryColor);
+ }

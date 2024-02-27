@@ -3,18 +3,34 @@
 
 
 body{
-	font-family: var(--font-secondary);
+	font-family: var(--font-primary);
 	max-width: 100vw;
+	
 	color: var(--color-lightest)
 }
 
 
 .top-header {
-	background-color: var(--tertiaryColor);
+	background-image:  repeating-radial-gradient(circle at 0 0, transparent 0, #3e001f 4px), repeating-linear-gradient(rgba(124, 0, 56, 0.88), #0f0e0e);
+	background-color: #3e001f;
 }
 
 .bottom-header {
-	background-color: var(--primaryColor) !important;
+	background: 
+      radial-gradient(calc(1.28*29px + 10.88px/2) at left 50% bottom calc(-.8*29px),#fb2485 calc(100% - 10.88px),#f11a7b calc(101% - 10.88px) 100%,#0000 101%) calc(2*29px) calc(-1*calc(1.5*29px + 10.88px)),
+      radial-gradient(calc(1.28*29px + 10.88px/2) at left 50% bottom calc(-.8*29px),#e92d81 calc(100% - 10.88px),#f11a7b calc(101% - 10.88px) 100%,#0000 101%) calc(-1*29px) calc(calc(1.5*29px + 10.88px)/-2),
+      radial-gradient(calc(1.28*29px + 10.88px/2) at left 50% top    calc(-.8*29px),#e92d81 calc(100% - 10.88px),#f11a7b calc(101% - 10.88px) 100%,#0000 101%) 0 calc(1.5*29px + 10.88px),
+      radial-gradient(calc(1.28*29px + 10.88px/2) at left 50% top    calc(-.8*29px),#fb2485 calc(100% - 10.88px),#f11a7b calc(101% - 10.88px) 100%,#0000 101%) 29px calc(calc(1.5*29px + 10.88px)/ 2),
+      linear-gradient(#fb2485 50%,#e92d81 0);
+background-size: calc(4*29px) calc(1.5*29px + 10.88px);
+}
+
+.pattern {
+	background:
+      conic-gradient(from -45deg,rgba(242, 27, 124, 0.88) 90deg,#0000 0 180deg,#3e001f 0 270deg,#0000 0)   
+        0 calc(19px/2)/19px 19px,    
+      conic-gradient(from 135deg at 50% 0,rgba(242, 27, 124, 0.88) 90deg,#3e001f 0)  
+        0 0/calc(2*19px) 19px;
 }
 
 .edit-flex {
@@ -51,24 +67,31 @@ body{
 }
 
 .pattern-backgrond{
-	background: linear-gradient(45deg,#0000 calc(25%/3), #f11a7b 0 calc(50%/3),
-      #0000 0 calc(250%/3), #f11a7b 0 calc(275%/3),
-      #0000 0),linear-gradient( 45deg,#f11a7b calc(25%/3), #0000 0 calc(50%/3),
-      #f11a7b 0 25%, #0000 0 75%,
-      #f11a7b 0 calc(250%/3), #0000 0 calc(275%/3),
-      #f11a7b 0),
-      linear-gradient(-45deg,#0000 calc(25%/3), #f11a7b 0 calc(50%/3),
-      #0000 0 calc(250%/3), #f11a7b 0 calc(275%/3),
-      #0000 0),linear-gradient(-45deg,#f11a7b calc(25%/3), #0000 0 calc(50%/3),
-      #f11a7b 0 25%, #0000 0 75%,
-      #f11a7b 0 calc(250%/3), #0000 0 calc(275%/3),
-      #f11a7b 0)
-      #3e001f;
-background-size: 40px 40px;
-background-position: 0 0, 20px  20px;
-
-	min-width: 100vw;
+	background:
+      conic-gradient(from -45deg,rgba(242, 27, 124, 0.88) 90deg,#0000 0 180deg,#3e001f 0 270deg,#0000 0)   
+        0 calc(19px/2)/19px 19px,    
+      conic-gradient(from 135deg at 50% 0,rgba(242, 27, 124, 0.88) 90deg,#3e001f 0)  
+        0 0/calc(2*19px) 19px;
+	overflow-x: hidden;
+	min-width: 100%;
 	height: 10px;
+}
+
+.enlarge {
+	transition: all .4s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+	-webkit-transition: all .4s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+	-moz-transition: all .4s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+	-ms-transition: all .4s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+	-o-transition: all .4s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+.enlarge:hover {
+	overflow: hidden;
+	transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	-o-transform: scale(1.5);
 }
 
 /* Glitch */
@@ -142,50 +165,75 @@ background-position: 0 0, 20px  20px;
 	}
  }
 
+.product {
+	border-color: var(--primaryColor);
+} 
+
 .product-overlay {
 	position: relative;
 } 
 
-.product-icon {
-	visibility: hidden;
-	position: absolute;
-	top: 0;
-	right: 0;
-	margin-top: 10px;
-	margin-right: 10px;
-	display: flex;
-	flex-direction: column;
-	border-radius: 10px;
-	background-color: var(--primaryColor);
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-ms-border-radius: 10px;
-	-o-border-radius: 10px;
-	
-}
-
-.product:hover .product-icon {
-	transition: all .7s ease;
-	visibility: visible;
-	-webkit-transition: all .7s ease;
-	-moz-transition: all .7s ease;
-	-ms-transition: all .7s ease;
-	-o-transition: all .7s ease;
-}
-
-.product-icon i {
-	color: var(--color-lightest);
-	padding: 10px;
-	font-size: larger;
-}
-
- .price {
-	background-color: var(--primaryColor);
-	color: var(--color-lightest);
+.price {
+	background-image:  repeating-radial-gradient(circle at 0 0, transparent 0, #3e001f 4px), repeating-linear-gradient(rgba(124, 0, 56, 0.88), #0f0e0e);
+	background-color: #3e001f;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+	width: 100%;
+	color: var(--accentColor);
 	font-weight: 900;
 	letter-spacing: 2px;
- }
+	text-align: center;
+	border: none;
+	transition: all .5s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+	-webkit-transition: all .5s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+	-moz-transition: all .5s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+	-ms-transition: all .5s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+	-o-transition: all .5s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+.price:hover {
+	color: var(--accentColor);
+}
 
  .product-name {
 	color: var(--primaryColor);
+	font-weight: 900;
+	text-transform: uppercase;
  }
+
+.product-icon {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: var(--accentColor);
+	font-size: larger;
+	padding: 10px 15px;
+	border-radius: 10px 0 0 0;
+	-webkit-border-radius: 10px 0 0 0;
+	-moz-border-radius: 10px 0 0 0;
+	-ms-border-radius: 10px 0 0 0;
+	-o-border-radius: 10px 0 0 0;
+	transition: all .05s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+	-webkit-transition: all .05s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+	-moz-transition: all .05s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+	-ms-transition: all .05s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+	-o-transition: all .05s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+.product-icon i {
+	color: var(--primaryColor);
+}
+
+
+
+.product-icon:hover {
+   background-color: var(--tertiaryColor);
+}
+
+.product:hover .product-icon {
+	transition: all .5s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+	-webkit-transition: all .5s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+	-moz-transition: all .5s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+	-ms-transition: all .5s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+	-o-transition: all .5s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}

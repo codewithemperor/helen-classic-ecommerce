@@ -4,7 +4,8 @@
 body{
 	font-family: var(--font-primary);
 	max-width: 100vw;
-	color: var(--color-lightest)
+	color: var(--color-lightest);
+	background-color: #ff9cc99b
 }
 
 
@@ -260,4 +261,58 @@ background-size: calc(4*29px) calc(1.5*29px + 10.88px);
 .product-price-icon {
 	font-size: .8rem;
 	display: block;
+}
+
+.card-o {
+	background-color: #fff;
+}
+
+.card-0__header {
+	padding: .4rem 1rem;
+	background-image:  repeating-radial-gradient(circle at 0 0, transparent 0, #3e001f 4px), repeating-linear-gradient(rgba(124, 0, 56, 0.88), #0f0e0e);
+	background-color: #3e001f;
+}
+.product1 {
+	aspect-ratio: 3/4;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	border: 1px solid var(--accentColor);
+}
+
+.product-image {
+	aspect-ratio: 1/1;
+	overflow: hidden;
+	width: 100%;
+}
+
+.product-image img {
+	width: 100%;
+	height: auto;
+	/* object-fit: cover; */
+}
+
+.product-description {
+	padding: .35rem;
+	color: #3e001f;
+}
+
+.product-description__name {
+	margin: 0;
+	font-size: .82rem;
+	margin-bottom: .1rem;
+}
+
+.product-description__price {
+	padding: 0;
+	font-weight: bold;
+	color: #0f0e0e;
+	font-size: 1.3rem;
+	margin: 0;
+	margin-bottom: .1rem;
+}
+
+.product-description__fprice {
+	text-decoration: line-through;
+	font-size: .75rem;
 }

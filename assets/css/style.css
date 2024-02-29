@@ -295,6 +295,7 @@ background-size: calc(4*29px) calc(1.5*29px + 10.88px);
 .product-description {
 	padding: .35rem;
 	color: #3e001f;
+	margin: .4rem 0;
 }
 
 .product-description__name {

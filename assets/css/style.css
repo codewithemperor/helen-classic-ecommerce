@@ -1,11 +1,9 @@
 @import url(root.css);
-@import url(responsive.css);
 
 
 body{
 	font-family: var(--font-primary);
 	max-width: 100vw;
-	
 	color: var(--color-lightest)
 }
 
@@ -15,6 +13,8 @@ body{
 	background-color: #3e001f;
 }
 
+
+
 .bottom-header {
 	background: 
       radial-gradient(calc(1.28*29px + 10.88px/2) at left 50% bottom calc(-.8*29px),#fb2485 calc(100% - 10.88px),#f11a7b calc(101% - 10.88px) 100%,#0000 101%) calc(2*29px) calc(-1*calc(1.5*29px + 10.88px)),
@@ -23,6 +23,14 @@ body{
       radial-gradient(calc(1.28*29px + 10.88px/2) at left 50% top    calc(-.8*29px),#fb2485 calc(100% - 10.88px),#f11a7b calc(101% - 10.88px) 100%,#0000 101%) 29px calc(calc(1.5*29px + 10.88px)/ 2),
       linear-gradient(#fb2485 50%,#e92d81 0);
 background-size: calc(4*29px) calc(1.5*29px + 10.88px);
+}
+
+.search .form-control{
+	font-size: .7rem;
+}
+
+.bottom-header .nav-link {
+	font-size: .8rem;
 }
 
 .pattern {
@@ -94,6 +102,10 @@ background-size: calc(4*29px) calc(1.5*29px + 10.88px);
 	-o-transform: scale(1.5);
 }
 
+.enlarge h2 {
+	font-size: 1.5rem;
+}
+
 /* Glitch */
 .glitch-wrapper {
 	width: 100%;
@@ -146,7 +158,11 @@ background-size: calc(4*29px) calc(1.5*29px + 10.88px);
  
 	20% {
 	   transform: translate(-3px, 3px);
-	}
+	   -webkit-transform: translate(-3px, 3px);
+	   -moz-transform: translate(-3px, 3px);
+	   -ms-transform: translate(-3px, 3px);
+	   -o-transform: translate(-3px, 3px);
+}
  
 	40% {
 	   transform: translate(-3px, -3px);
@@ -166,7 +182,7 @@ background-size: calc(4*29px) calc(1.5*29px + 10.88px);
  }
 
 .product {
-	border-color: var(--primaryColor);
+	/* border-color: var(--primaryColor); */
 } 
 
 .product-overlay {
@@ -199,6 +215,11 @@ background-size: calc(4*29px) calc(1.5*29px + 10.88px);
 	color: var(--primaryColor);
 	font-weight: 900;
 	text-transform: uppercase;
+	font-size: 1.1rem;
+ }
+
+ .product-description {
+	font-size: .9rem
  }
 
 .product-icon {
@@ -206,13 +227,13 @@ background-size: calc(4*29px) calc(1.5*29px + 10.88px);
 	bottom: 0;
 	right: 0;
 	background-color: var(--accentColor);
-	font-size: larger;
-	padding: 10px 15px;
-	border-radius: 10px 0 0 0;
-	-webkit-border-radius: 10px 0 0 0;
-	-moz-border-radius: 10px 0 0 0;
-	-ms-border-radius: 10px 0 0 0;
-	-o-border-radius: 10px 0 0 0;
+	font-size: 1rem;
+	padding: .6rem .9rem;
+	border-radius: .8rem 0 0 0;
+	-webkit-border-radius: .8rem 0 0 0;
+	-moz-border-radius: .8rem 0 0 0;
+	-ms-border-radius: .8rem 0 0 0;
+	-o-border-radius: .8rem 0 0 0;
 	transition: all .05s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 	-webkit-transition: all .05s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 	-moz-transition: all .05s cubic-bezier(0.895, 0.03, 0.685, 0.22);
@@ -230,10 +251,13 @@ background-size: calc(4*29px) calc(1.5*29px + 10.88px);
    background-color: var(--tertiaryColor);
 }
 
-.product:hover .product-icon {
-	transition: all .5s cubic-bezier(0.895, 0.03, 0.685, 0.22);
-	-webkit-transition: all .5s cubic-bezier(0.895, 0.03, 0.685, 0.22);
-	-moz-transition: all .5s cubic-bezier(0.895, 0.03, 0.685, 0.22);
-	-ms-transition: all .5s cubic-bezier(0.895, 0.03, 0.685, 0.22);
-	-o-transition: all .5s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+.product-price {
+	font-size: .8rem;
+	display: block;
+	margin: 0;
+}
+
+.product-price-icon {
+	font-size: .8rem;
+	display: block;
 }

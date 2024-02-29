@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="resources/css/remixicon/remixicon.css">
     <link rel="stylesheet" href="resources/css/lightslider.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsiveness.css">
     <title>Document</title>
 </head>
 <body>
@@ -18,15 +19,15 @@
         <div class="col-md-2">
           <a href="/" class="d-flex justify-content-start align-items-center">
             <img src="assets/img/favicon-32x32.png" alt="Helen's Classic Logo" class="me-2 rounded-5" width="32" height="32" >
-            <span class="fs-5 d-md-inline d-none">Helen's Classic</span>
+            <span class="fs-5 d-lg-inline d-none">Helen's Classic</span>
           </a>
         </div>
 
-        <div class="search col-7">
+        <div class="search col-7 ">
           <form class="d-flex" role="search">
             <div class="input-group">
               <input class="form-control" type="search" placeholder="Search for products, brand, categories etc" aria-label="Search">
-              <button class="btn search-btn" type="submit"><i class="ri-search-line"></i></button>
+              <button class="btn search-btn" type="submit" name="search"><i class="ri-search-line"></i></button>
             </div>
           </form>
         </div>
@@ -38,7 +39,7 @@
               <i class="ri-shopping-cart-2-fill fs-3"></i>
               <span class="position-absolute top-50 start`-0 translate-middle badge rounded-pill bg-danger">
                 0
-                <span class="visually-hidden">unread messages</span>
+                <span class="visually-hidden"></span>
               </span>
             </a>
       
@@ -57,7 +58,7 @@
             <div class="dropdown">
               <a href="#" class="d-block dropdown-toggle px-2 px-md-0" data-bs-toggle="dropdown" aria-expanded="false">
                 <img src="assets/img/blog-1.png" alt="mdo" width="32" height="32" class="rounded-circle" class="">
-                <span class="d-md-inline d-none">Sulamon Yusuf</span>
+                <span class="d-lg-inline d-none">Sulamon Yusuf</span>
               </a>
               <ul class="dropdown-menu text-small">
                 <li><a class="dropdown-item" href="#">My Orders</a></li>
@@ -75,7 +76,7 @@
     </div>
 
     <div class="bottom-header py-1">
-      <ul class="d-flex me-auto m-0">
+      <ul class="d-flex me-auto m-0 p-0">
         <li class="nav-item ">
           <a class="nav-link" href="#">Top Deals</a>
         </li>
@@ -121,27 +122,27 @@
   <div class="pattern-backgrond"></div>
 
   <div class="container-fluid">
-    <div class="row overflow-hidden">
+    <div class="row overflow-hidden row-cols-4">
       <a href="#" class="col enlarge bottom-header d-flex align-items-center justify-content-center p-3 py-5">
-        <h2>Bags</h2>
+        Bags
       </a>
 
       <a href="#" class="col enlarge top-header d-flex align-items-center justify-content-center p-3 py-5">
-        <h2>Shoes</h2>
+        Shoes
       </a>
 
       <a href="#" class="col enlarge bottom-header d-flex align-items-center justify-content-center p-3 py-5">
-        <h2>Wears</h2>
+        Wears
       </a>
 
       <a href="#" class="col enlarge top-header d-flex align-items-center justify-content-center p-3 py-5">
-        <h2>Utensils</h2>
+        Utensils
       </a>
       
     </div>
   </div>
 
- <div class="container-lg p-4 px-lg-0">
+ <div class="container-lg p-3 px-lg-0">
 
   <div class="glitch-wrapper line mt-lg-2 mb-3">
     <div class="glitch " data-glitch="New Arrival">New Arrival</div>
@@ -161,169 +162,25 @@
 
         </div>
         <div class="card-body py-2 d-flex justify-content-center flex-column align-items-middle">
-          <h5 class="card-title product-name my-1">Gucci Bag</h5>
-          <div class="d-flex justify-content-between py-1">
-            <h6 class="card-subtitle text-muted">Qty: 5</h6>
-            <h6 class="card-subtitle text-muted">Bags</h6>
+          <h5 class="product-name text-center">Gucci Bag</h5>
+          <div class="d-flex justify-content-between">
+            <h6 class="card-subtitle text-muted product-description">In Stock</h6>
+            <h6 class="card-subtitle text-muted product-description">Bags</h6>
           </div>
         </div>
   
         <div class="card-footer p-0">
           
             <button class="btn price d-flex justify-content-between px-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Cart">
-              <span>N32,782.83</span> 
-              <i class="ri-shopping-cart-2-fill"></i>
+              <p class="product-price">N32,782.83</p> 
+              <i class="ri-shopping-cart-2-fill product-price-icon"></i>
             </button>
           
         </div>
       </div>
     </div>
 
-    <div class="col px-1">
-      <div class="card h-100 product p-0">
-        <div class="product-overlay">
-          <img src="assets/img/beautiful-casual-woman-fashion-set.jpg" class="card-img-top" alt="...">
-  
-          <div class="product-icon" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
-            <a href=""><i class="ri-eye-fill"></i></a>
-          </div>
-
-        </div>
-        <div class="card-body py-2 d-flex justify-content-center flex-column align-items-middle">
-          <h5 class="card-title product-name my-1">Gucci Bag</h5>
-          <div class="d-flex justify-content-between py-1">
-            <h6 class="card-subtitle text-muted">Qty: 5</h6>
-            <h6 class="card-subtitle text-muted">Bags</h6>
-          </div>
-        </div>
-  
-        <div class="card-footer p-0">
-          
-            <button class="btn price d-flex justify-content-between px-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Cart">
-              <span>N32,782.83</span> 
-              <i class="ri-shopping-cart-2-fill"></i>
-            </button>
-          
-        </div>
-      </div>
-    </div>
-
-    <div class="col px-1">
-      <div class="card h-100 product p-0">
-        <div class="product-overlay">
-          <img src="assets/img/beautiful-casual-woman-fashion-set.jpg" class="card-img-top" alt="...">
-  
-          <div class="product-icon" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
-            <a href=""><i class="ri-eye-fill"></i></a>
-          </div>
-
-        </div>
-        <div class="card-body py-2 d-flex justify-content-center flex-column align-items-middle">
-          <h5 class="card-title product-name my-1">Gucci Bag</h5>
-          <div class="d-flex justify-content-between py-1">
-            <h6 class="card-subtitle text-muted">Qty: 5</h6>
-            <h6 class="card-subtitle text-muted">Bags</h6>
-          </div>
-        </div>
-  
-        <div class="card-footer p-0">
-          
-            <button class="btn price d-flex justify-content-between px-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Cart">
-              <span>N32,782.83</span> 
-              <i class="ri-shopping-cart-2-fill"></i>
-            </button>
-          
-        </div>
-      </div>
-    </div>
-
-    <div class="col px-1">
-      <div class="card h-100 product p-0">
-        <div class="product-overlay">
-          <img src="assets/img/beautiful-casual-woman-fashion-set.jpg" class="card-img-top" alt="...">
-  
-          <div class="product-icon" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
-            <a href=""><i class="ri-eye-fill"></i></a>
-          </div>
-
-        </div>
-        <div class="card-body py-2 d-flex justify-content-center flex-column align-items-middle">
-          <h5 class="card-title product-name my-1">Gucci Bag</h5>
-          <div class="d-flex justify-content-between py-1">
-            <h6 class="card-subtitle text-muted">Qty: 5</h6>
-            <h6 class="card-subtitle text-muted">Bags</h6>
-          </div>
-        </div>
-  
-        <div class="card-footer p-0">
-          
-            <button class="btn price d-flex justify-content-between px-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Cart">
-              <span>N32,782.83</span> 
-              <i class="ri-shopping-cart-2-fill"></i>
-            </button>
-          
-        </div>
-      </div>
-    </div>
-
-    <div class="col px-1">
-      <div class="card h-100 product p-0">
-        <div class="product-overlay">
-          <img src="assets/img/beautiful-casual-woman-fashion-set.jpg" class="card-img-top" alt="...">
-  
-          <div class="product-icon" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
-            <a href=""><i class="ri-eye-fill"></i></a>
-          </div>
-
-        </div>
-        <div class="card-body py-2 d-flex justify-content-center flex-column align-items-middle">
-          <h5 class="card-title product-name my-1">Gucci Bag</h5>
-          <div class="d-flex justify-content-between py-1">
-            <h6 class="card-subtitle text-muted">Qty: 5</h6>
-            <h6 class="card-subtitle text-muted">Bags</h6>
-          </div>
-        </div>
-  
-        <div class="card-footer p-0">
-          
-            <button class="btn price d-flex justify-content-between px-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Cart">
-              <span>N32,782.83</span> 
-              <i class="ri-shopping-cart-2-fill"></i>
-            </button>
-          
-        </div>
-      </div>
-    </div>
-
-    <div class="col px-1">
-      <div class="card h-100 product p-0">
-        <div class="product-overlay">
-          <img src="assets/img/beautiful-casual-woman-fashion-set.jpg" class="card-img-top" alt="...">
-  
-          <div class="product-icon" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
-            <a href=""><i class="ri-eye-fill"></i></a>
-          </div>
-
-        </div>
-        <div class="card-body py-2 d-flex justify-content-center flex-column align-items-middle">
-          <h5 class="card-title product-name my-1">Gucci Bag</h5>
-          <div class="d-flex justify-content-between py-1">
-            <h6 class="card-subtitle text-muted">Qty: 5</h6>
-            <h6 class="card-subtitle text-muted">Bags</h6>
-          </div>
-        </div>
-  
-        <div class="card-footer p-0">
-          
-            <button class="btn price d-flex justify-content-between px-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Cart">
-              <span>N32,782.83</span> 
-              <i class="ri-shopping-cart-2-fill"></i>
-            </button>
-          
-        </div>
-      </div>
-    </div>
-
+   
   
 
     
@@ -333,6 +190,7 @@
 
  </div>
 
+ 
  
   
     

@@ -313,6 +313,12 @@ background-size: calc(4*29px) calc(1.5*29px + 10.88px);
 	margin-bottom: .1rem;
 }
 
+ .naira{
+	margin-right: .2rem;
+	text-decoration: line-through double;
+	
+}
+
 .product-description__fprice {
 	text-decoration: line-through;
 	font-size: .75rem;

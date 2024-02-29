@@ -306,7 +306,7 @@ background-size: calc(4*29px) calc(1.5*29px + 10.88px);
 
 .product-description__price {
 	padding: 0;
-	font-weight: bold;
+	font-weight: 700;
 	color: #0f0e0e;
 	font-size: 1.3rem;
 	margin: 0;

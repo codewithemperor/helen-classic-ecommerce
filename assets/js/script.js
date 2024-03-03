@@ -14,4 +14,22 @@ function scrollFunction() {
 
 // Tooltip
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
+// slide
+
+  // let currentSlide = 0;
+  // const totalSlides = document.querySelectorAll('.slide').length;
+
+  // function slide(direction) {
+  //   const slides = document.querySelector('.slides');
+    
+  //   if (direction === 'left') {
+  //     currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+  //   } else if (direction === 'right') {
+  //     currentSlide = (currentSlide + 1) % totalSlides;
+  //   }
+
+  //   const slideWidth = document.querySelector('.slide').offsetWidth;
+  //   slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+  // }

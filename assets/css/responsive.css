@@ -3,6 +3,10 @@
   html {
     font-size: 10px;
   }
+
+  .fit {
+    aspect-ratio: 4/3;;
+  }
   
 }
 

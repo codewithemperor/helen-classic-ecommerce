@@ -216,10 +216,10 @@ background-size: calc(4*29px) calc(1.5*29px + 10.88px);
 	font-size: .8rem;
 	margin: 0;
 	border-radius: .3rem;
-	-webkit-border-radius: .3rem;
-	-moz-border-radius: .3rem;
-	-ms-border-radius: .3rem;
-	-o-border-radius: .3rem;
+	-webkit-border-radius:;
+	-moz-border-radius:;
+	-ms-border-radius:;
+	-o-border-radius:;
 }
 .product {
 	aspect-ratio: 3/4;
@@ -229,10 +229,10 @@ background-size: calc(4*29px) calc(1.5*29px + 10.88px);
 	border-radius: .6rem;
 	overflow: hidden;
 	border: 1px solid #dddddd;
-	-webkit-border-radius: .6rem;
-	-moz-border-radius: .6rem;
-	-ms-border-radius: .6rem;
-	-o-border-radius: .6rem;
+	-webkit-border-radius:;
+	-moz-border-radius:;
+	-ms-border-radius:;
+	-o-border-radius:;
 	transition: all .5s;
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
@@ -284,8 +284,9 @@ background-size: calc(4*29px) calc(1.5*29px + 10.88px);
 }
 
 .product-description__price {
+	font-family: var(--font-secondary);
 	padding: 0;
-	font-weight: 900;
+	font-weight: 700;
 	color: #0f0e0e;
 	font-size: 1rem;
 	margin: 0;
@@ -324,6 +325,10 @@ background-size: calc(4*29px) calc(1.5*29px + 10.88px);
 
   .slides {
 	transition: transform 0.5s ease-in-out;
+	-webkit-transition: transform 0.5s ease-in-out;
+	-moz-transition: transform 0.5s ease-in-out;
+	-ms-transition: transform 0.5s ease-in-out;
+	-o-transition: transform 0.5s ease-in-out;
 }
 
   .slide .product {
@@ -336,7 +341,39 @@ background-size: calc(4*29px) calc(1.5*29px + 10.88px);
 	text-align: center;
   }
 
-  
+#howTo {
+	color:#0f0e0e;
+}
 
+#howTo .headText {
+	font-family: var(--font-secondary);
+	font-weight: 700;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+#howTo i {
+	color: var(--primaryColor);
+	text-align: center;
+	font-size: 2.7rem;
+	width: 100%;
+	margin-bottom: .8rem;
+}
+
+#howTo .description {
+	font-family: var(--font-secondary);
+	color: var(--primaryColor);
+	font-weight: 600;
+	text-align: center;
+}
+
+#howTo .detail {
+	font-family: var(--font-secondary);
+
+}
+
+#howTo .col:nth-child(2), #howTo .col:nth-child(1) {
+	border-right: 2px solid var(--primaryColor);
+}
 
 

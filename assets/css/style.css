@@ -376,4 +376,66 @@ background-size: calc(4*29px) calc(1.5*29px + 10.88px);
 	border-right: 2px solid var(--primaryColor);
 }
 
+footer .nav-link{
+	color: var(--accentColor);
+}
+
+footer .nav-link:hover{
+	color: #dddddd;
+}
+
+footer i, footer span {
+	display: block;
+	font-size: 1.4rem;
+	color: var(--accentColor);
+}
+
+footer span {
+	font-family: var(--font-secondary);
+}
+
+footer .ri-facebook-fill:hover, footer .ri-phone-fill:hover, footer .ri-instagram-fill:hover, footer .ri-whatsapp-fill:hover {
+		transition: all .5s;
+		-webkit-transition: all .5s;
+		-moz-transition: all .5s;
+		-ms-transition: all .5s;
+		-o-transition: all .5s;
+}
+
+footer .ri-instagram-fill:hover {
+	color: var(--color-instagram);
+	transform: scale(1.15);
+	-webkit-transform: scale(1.15);
+	-moz-transform: scale(1.15);
+	-ms-transform: scale(1.15);
+	-o-transform: scale(1.15);
+}
+
+footer .ri-facebook-fill:hover {
+	transform: scale(1.15);
+	color: var(--color-facebook);
+	-webkit-transform: scale(1.15);
+	-moz-transform: scale(1.15);
+	-ms-transform: scale(1.15);
+	-o-transform: scale(1.15);
+}
+
+footer .ri-whatsapp-fill:hover {
+	color: var(--color-success);
+	transform: scale(1.15);
+	-webkit-transform: scale(1.15);
+	-moz-transform: scale(1.15);
+	-ms-transform: scale(1.15);
+	-o-transform: scale(1.15);
+}
+
+footer .ri-phone-fill:hover {
+	color: var(--color-grey);
+	transform: scale(1.15);
+	-webkit-transform: scale(1.15);
+	-moz-transform: scale(1.15);
+	-ms-transform: scale(1.15);
+	-o-transform: scale(1.15);
+}
+
 

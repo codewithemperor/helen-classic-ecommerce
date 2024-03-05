@@ -5,7 +5,7 @@ body{
 	font-family: var(--font-primary);
 	max-width: 100vw;
 	color: var(--color-lightest);
-	background-color: #ff9cc99b
+	background-color: #ff9cc99b;
 }
 
 
@@ -54,6 +54,67 @@ background-size: calc(4*29px) calc(1.5*29px + 10.88px);
 .search-btn:hover {
 	background-color: var(--color-lightest);
 	color: var(--primaryColor);
+}
+
+/* Checkout */
+
+.offcanvas-body::-webkit-scrollbar {
+	width: 8px;
+}
+
+div::-webkit-scrollbar-thumb {
+	background-image:  repeating-radial-gradient(circle at 0 0, transparent 0, #3e001f 4px), repeating-linear-gradient(rgba(124, 0, 56, 0.88), #0f0e0e);
+	background-color: #3e001f;;
+	border-radius: 6px;
+}
+  
+  
+div::-webkit-scrollbar-track {
+	background-color: #f1f1f1; 
+}
+  
+  /* Handle when it's dragged */
+  div::-webkit-scrollbar-thumb:active {
+	background-color: #555;
+  }
+
+
+
+.offcanvas-footer .clear-all {
+	background-color: #0f0e0e;
+	color: var(--accentColor);
+	text-align: center;
+	padding: .8rem 0;
+}
+
+.offcanvas-footer .proceed {
+	background-image:  repeating-radial-gradient(circle at 0 0, transparent 0, #3e001f 4px), repeating-linear-gradient(rgba(124, 0, 56, 0.88), #0f0e0e);
+	background-color: #3e001f;
+	color: #eeeeee;
+	text-align: center;
+	padding: .8rem 0;
+}
+
+.offcanvas-body .product-description__price {
+	color: var(--primaryColor) ;
+	font-size: 90%;
+	margin-top: .5rem;
+}
+
+.offcanvas-footer div:first-child {
+	background-color: var(--accentColor);
+}
+.offcanvas-footer .product-description__price {
+	color: var(--tertiaryColor) ;
+	font-size: 110%;
+}
+
+.offcanvas-footer .product-description__name {
+	font-size: 110%;
+}
+
+.offcanvas-body a:nth-child(even) {
+	background-color: #f6e6f2;
 }
 
 .bg-1 {

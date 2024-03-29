@@ -5,7 +5,7 @@ body{
 	font-family: var(--font-primary);
 	max-width: 100vw;
 	color: var(--color-lightest);
-	background-color: #ff9cc99b;
+	background-color: #f3f3f39b;
 }
 
 
@@ -499,4 +499,27 @@ footer .ri-phone-fill:hover {
 	-o-transform: scale(1.15);
 }
 
+
+/* PRODUCT  */
+
+.prod.product-description__name {
+	font-size: 170%;
+}
+
+.prod.product-description__price {
+	font-size: 230%;	
+	font-weight: 600;
+	font-family: var(--font-primary);
+	color: var(--primaryColor);
+}
+
+.prod.product-description__fprice {
+	font-size: 120%;
+}
+
+.prod.r {
+	font-family: var(--font-secondary);
+	font-size: 1rem;
+	color: #f11a7b;
+}
 

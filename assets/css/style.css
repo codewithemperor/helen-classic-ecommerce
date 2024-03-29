@@ -529,13 +529,24 @@ footer .ri-phone-fill:hover {
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
-	border: 2px solid #fff;
+	border: 1px solid #fff;
 	cursor: pointer;
 	margin-right: 10px;
-	opacity: .4;
+	opacity: .3;
+	transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-ms-transition: all .3s linear;
+	-o-transition: all .3s linear;
 }
 .color-option.selected {
-	border-color:rgba(124, 0, 56, 0.88);
+	box-shadow: 3px 4px 13.5px -1.5px #7d7373;
+	border-color:#0f0e0e;
 	opacity: 1;
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
 }
 

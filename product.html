@@ -240,8 +240,8 @@
     
     </header>
 
-    <section class="p-3 my-3 d-flex">
-        <div class="col-5 col-md-5 col-lg-3">
+    <section class="p-3 my-3 d-md-flex ">
+        <div class="col-12 col-md-4 col-lg-3">
             <!-- <div class="product-image">
                 <img src="assets/img/product/Fashion.jpg" class="product-img" alt="...">
               </div> -->
@@ -264,37 +264,22 @@
               </ul>
         </div>
         <div class="col">
-            <div class="product-description col-md-8 col-lg-7 ms-2">
+            <div class="product-description col-md-9 col-lg-7 ms-2 ms-md-3">
                 <p class="col prod r m-0">In Stock</p>
                 <p class="prod product-description__name">2023 New Tiger Head Knitted Handbag Wallet Envelope Bag</p><hr>
                 <div class="py-1">
                     <h6 class="prod product-description__price"><span class="naira">N</span>34,028.00</h6>
                     <p class="col prod product-description__fprice m-0"><span class="naira">N</span>45,000.00</p>
                     <!-- <hr style="opacity: 10%;""> -->
-                    <div class="d-flex">
+                    <div class="row mt-3">
+                                               
                         <div class="col">
-                            <div class="row g-3 align-items-center mt-1">
-                                <div class="col-auto">
-                                    <label class="col-form-label" for="specificSizeSelect">Color</label>
+                            <div class="align-items-center d-flex">
+                                <div class="col-auto me-2">
+                                    <label class="col-form-label" for="size">Size:</label>
                                 </div>
-                                <div class="col-auto">
-                                    <select class="form-select" id="specificSizeSelect">
-                                      <option selected disabled>Choose...</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col">
-                            <div class="row g-3 align-items-center mt-1">
-                                <div class="col-auto">
-                                    <label class="col-form-label" for="specificSizeSelect">Color</label>
-                                </div>
-                                <div class="col-auto">
-                                    <select class="form-select" id="specificSizeSelect">
+                                <div class="col">
+                                    <select class="form-select" id="size">
                                       <option selected disabled>Choose...</option>
                                       <option value="1">One</option>
                                       <option value="2">Two</option>
@@ -305,17 +290,39 @@
                         </div>
 
                         <div class="col">
-                            <div class="row g-3 align-items-center mt-1">
-                                <div class="col-auto">
-                                    <label class="col-form-label" for="specificSizeSelect">Qty</label>
+                            <div class="align-items-center d-flex">
+                                <div class="col-auto me-2">
+                                    <label class="col-form-label" for="qty">Qty:</label>
                                 </div>
                                 <div class="col-auto">
-                                    <input type="number" name="" id="" class="form-control">
+                                    <input type="number" name="qty" id="qty" class="form-control">
                                 </div>
                             </div>
                         </div>
                         
                     </div>
+
+                    <div class="col">
+                        <div class="row g-3 align-items-center mt-1">
+                            <div class="col-auto">
+                                <label class="col-form-label" for="specificSizeSelect">Color:</label>
+                            </div>
+                            <div class="col-auto">
+                                <div class="color-selector">
+                                    <div class="color-option" style="background-color: red;"></div>
+                                    <div class="color-option" style="background-color: blue;"></div>
+                                    <div class="color-option" style="background-color: green;"></div>
+                                    <!-- Add more color options as needed -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div class="d-flex justify-content-center mt-3">
+                    <button id="add-to-cart-btn" class="btn btn-primary p-3 px-5 w-75">Add to Cart</button>
                 </div>
               </div>
         </div>

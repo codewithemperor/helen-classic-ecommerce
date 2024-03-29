@@ -16,20 +16,20 @@ function scrollFunction() {
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
-// slide
+// Product Color Chooser
 
-  // let currentSlide = 0;
-  // const totalSlides = document.querySelectorAll('.slide').length;
+const colorOptions = document.querySelectorAll('.color-option');
 
-  // function slide(direction) {
-  //   const slides = document.querySelector('.slides');
-    
-  //   if (direction === 'left') {
-  //     currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-  //   } else if (direction === 'right') {
-  //     currentSlide = (currentSlide + 1) % totalSlides;
-  //   }
+    function selectColor(event) {
+        
+        colorOptions.forEach(option => {
+            option.classList.remove('selected');
+        });
 
-  //   const slideWidth = document.querySelector('.slide').offsetWidth;
-  //   slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-  // }
+        // Select the clicked color option
+        event.target.classList.add('selected');
+    }
+
+    colorOptions.forEach(option => {
+        option.addEventListener('click', selectColor);
+    });

@@ -523,3 +523,19 @@ footer .ri-phone-fill:hover {
 	color: #f11a7b;
 }
 
+
+.color-option {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	cursor: pointer;
+	margin-right: 10px;
+	opacity: .4;
+}
+.color-option.selected {
+	border-color:rgba(124, 0, 56, 0.88);
+	opacity: 1;
+}
+

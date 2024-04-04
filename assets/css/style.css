@@ -277,10 +277,7 @@ div::-webkit-scrollbar-track {
 	font-size: .8rem;
 	margin: 0;
 	border-radius: .3rem;
-	-webkit-border-radius:;
-	-moz-border-radius:;
-	-ms-border-radius:;
-	-o-border-radius:;
+
 }
 .product {
 	aspect-ratio: 3/4;
@@ -290,10 +287,6 @@ div::-webkit-scrollbar-track {
 	border-radius: .6rem;
 	overflow: hidden;
 	border: 1px solid #dddddd;
-	-webkit-border-radius:;
-	-moz-border-radius:;
-	-ms-border-radius:;
-	-o-border-radius:;
 	transition: all .5s;
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;

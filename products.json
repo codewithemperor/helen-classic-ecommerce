@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name": "2023 New Tiger Head Knitted Handbag Wallet Envelope Bag",
+        "image": "assets/img/product/Fashion.jpg",
+        "price": 34028.00,
+        "discounted_price": 45000.00
+    },
+    {
+        "id": 2,
+        "name": "Product 2",
+        "image": "assets/img/product/1.jpg",
+        "price": 25000.00,
+        "discounted_price": 30000.00
+    },
+    {
+        "id": 3,
+        "name": "Product 3",
+        "image": "assets/img/product/2.jpg",
+        "price": 15000.00,
+        "discounted_price": 18000.00
+    },
+    {
+        "id": 4,
+        "name": "Product 4",
+        "image": "assets/img/product/3.jpg",
+        "price": 20000.00,
+        "discounted_price": 24000.00
+    },
+    {
+        "id": 5,
+        "name": "Product 5",
+        "image": "assets/img/product/4.jpg",
+        "price": 18000.00,
+        "discounted_price": 21000.00
+    },
+    {
+        "id": 6,
+        "name": "Product 6",
+        "image": "assets/img/product/5.jpg",
+        "price": 22000.00,
+        "discounted_price": 26000.00
+    },
+    {
+        "id": 7,
+        "name": "Product 7",
+        "image": "assets/img/product/6.jpg",
+        "price": 30000.00,
+        "discounted_price": 35000.00
+    },
+    {
+        "id": 8,
+        "name": "Product 8",
+        "image": "assets/img/product/Fashion.jpg",
+        "price": 28000.00,
+        "discounted_price": 32000.00
+    },
+    {
+        "id": 9,
+        "name": "Product 9",
+        "image": "assets/img/product/1.jpg",
+        "price": 26000.00,
+        "discounted_price": 30000.00
+    },
+    {
+        "id": 10,
+        "name": "Product 10",
+        "image": "assets/img/product/2.jpg",
+        "price": 32000.00,
+        "discounted_price": 38000.00
+    },
+    {
+        "id": 11,
+        "name": "Product 11",
+        "image": "assets/img/product/3.jpg",
+        "price": 34000.00,
+        "discounted_price": 40000.00
+    },
+    {
+        "id": 12,
+        "name": "Product 12",
+        "image": "assets/img/product/4.jpg",
+        "price": 28000.00,
+        "discounted_price": 33000.00
+    }
+]
